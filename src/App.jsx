@@ -23,6 +23,10 @@ import PaypalReturnPage from "./pages/shopping-view/paypal-return";
 import PaymentSuccessPage from "./pages/shopping-view/payment-success";
 import SearchProducts from "./pages/shopping-view/search";
 
+import axios from "axios";
+
+axios.defaults.baseURL = "https://thodmc-backend.onrender.com/api";
+
 function App() {
   const { user, isAuthenticated, isLoading } = useSelector(
     (state) => state.auth
